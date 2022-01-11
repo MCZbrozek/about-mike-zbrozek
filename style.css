@@ -1,4 +1,59 @@
-body { color: cadetblue;}
+/*https://developer.mozilla.org/en-US/docs/Web/HTML/Applying_color
+I was trying to add colored box elements to my page and found this on the mozilla page.
+I don't think I manipulated them how I had envisioned. But this definately help to
+give me a framework.
+ */
+.wrapper {
+    /*This is the outside border framework used to enclose the <div> content*/
+    width: 1240px;
+    height: 720px;
+    margin: 0;
+    padding: 10px;
+    border: 6px solid mediumturquoise;
+    background-color: lightblue;
+}
 
-h1 { font-size: 16px}
+.box {
+    /*This modifies the attributes, shared between the two box types. Changes here
+    with effect both boxes (red and purple)*/
+    max-width: fit-content;
+    margin: 6px;
+    padding: 4px 6px;
+    font: 28px "Marker Felt", "Zapfino", cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.boxHeading {
+    /*Modifies attributes of the header box, text color is default "black" */
+    float: left;
+    background-color: rgb(245,130,130);
+    outline: 2px solid darkred;
+}
+
+.boxListDisplay {
+    float: right;
+    background-color: hsl(270deg, 25%, 85%);
+    /*hsl(hue, saturation, lightness) Hue is a degree on the color wheel 0 to 360°.
+     saturation is a percentage value 0% is a shade of gray, 100% would express the full color.
+     Lightness is a percentage value, 0% is black, 100% is white.*/
+    outline: 2px solid darkorchid;
+    color: hsl(0deg, 100%, 100%);
+    text-shadow: 2px 2px 3px black;
+}
+
+li {
+    margin: 20px 0;
+}
+
+img {
+    float: left;
+    height: 360px;
+    width: 480px;
+    outline: 2px solid darkorchid;
+}
+
+
 
